@@ -29,6 +29,9 @@ program.command('generate')
         spinner.succeed(chalk.green(' URL generated!'));
         const secondSpinner = ora(' https://sweter.com/coming-soon/535745544552205765627369746520697320636f6d696e6720736f6f6e21').start();
         secondSpinner.info();
+        for (let i = 0; i < 30; i++)
+            secondSpinner.info();
+
         console.log();
         delay(100000);
     });
